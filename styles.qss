@@ -1,0 +1,163 @@
+QWidget#root {
+    background: #f0f4f8;
+}
+
+QWidget#statusIndicator {
+    background: #ffffff;
+    border: 1px solid #c8d0da;
+    border-radius: 20px;
+}
+
+QWidget#statusIndicator QLabel {
+    background: transparent;
+    border: none;
+}
+
+QWidget#statusIndicator QLabel#statusDot {
+    font-family: Arial;
+    font-size: 11px;
+}
+
+QWidget#statusIndicator QLabel#statusText {
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+QWidget#statusIndicator[connected="false"] QLabel#statusDot,
+QWidget#statusIndicator[connected="false"] QLabel#statusText {
+    color: #cf222e;
+}
+
+QWidget#statusIndicator[connected="true"] QLabel#statusDot,
+QWidget#statusIndicator[connected="true"] QLabel#statusText {
+    color: #1a7f37;
+}
+
+QFrame#deviceFrame,
+QFrame#plotPanel {
+    background: #ffffff;
+    border: 1px solid #c8d0da;
+    border-radius: 10px;
+}
+
+QFrame#sidebar {
+    background: #f0f4f8;
+    border: 1px solid #c8d0da;
+    border-radius: 10px;
+}
+
+QLabel#deviceIcon {
+    color: #0969da;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+}
+
+QLabel#deviceCaption {
+    color: #57606a;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    background: transparent;
+    border: none;
+}
+
+QLabel#deviceName {
+    color: #1a2332;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+QFrame#divider,
+QFrame#sidebarSeparator {
+    color: #c8d0da;
+    background: #c8d0da;
+    max-height: 1px;
+    border: none;
+}
+
+QLabel#sidebarHeading,
+QLabel#plotTitle {
+    color: #57606a;
+    font-family: "Courier New", monospace;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: transparent;
+    border: none;
+}
+
+QLabel#channelLabel {
+    color: #0969da;
+    font-family: "Courier New", monospace;
+    font-size: 9px;
+    background: transparent;
+}
+
+QWidget#plotWidget {
+    background: #ffffff;
+    border: none;
+}
+
+QTabWidget#graphTabs::pane {
+    border: 1px solid #c8d0da;
+    border-radius: 8px;
+    top: -1px;
+    background: #ffffff;
+}
+
+QTabWidget#graphTabs QTabBar::tab {
+    background: #f0f4f8;
+    color: #57606a;
+    border: 1px solid #c8d0da;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px 14px;
+    margin-right: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+QTabWidget#graphTabs QTabBar::tab:selected {
+    background: #ffffff;
+    color: #0969da;
+    border-bottom-color: #ffffff;
+}
+
+QTabWidget#graphTabs QTabBar::tab:hover {
+    color: #0969da;
+}
+
+QTabWidget#graphTabs QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+
+QPushButton#sidebarButton {
+    background: #ffffff;
+    color: #1a2332;
+    border: 1px solid #c8d0da;
+    border-radius: 6px;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 12px;
+    text-align: left;
+}
+
+QPushButton#sidebarButton:hover {
+    background: #dde4ed;
+    border: 1px solid #0550ae;
+    color: #0969da;
+}
+
+QPushButton#sidebarButton:checked {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #0550ae, stop:1 #0969da);
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+}
